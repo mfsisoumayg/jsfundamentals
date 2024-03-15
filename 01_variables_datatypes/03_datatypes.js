@@ -74,6 +74,9 @@ arr3[1] = 2 // as we have added the element at 0th index with unshift()
 console.log(arr3, typeof arr3, arr3.length) // object
 
 console.log('---Check object---')
+/*
+1. using Object() or new Object() remains the same
+*/
 let obj1 = {}
 obj1.ver = 18
 let obj2 = new Object() // additional parameters can be added
