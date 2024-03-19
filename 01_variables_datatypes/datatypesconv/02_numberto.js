@@ -1,5 +1,5 @@
 /*
-    number -> string; object; array
+    number -> string; object; boolean
 */
 
 let num1 = 1 // is equal to Number() = 0
@@ -86,9 +86,24 @@ num3_2 = new Boolean(num3)
 num4_2 = new Boolean(num4)
 num5_2 = new Boolean(num5)
 num6_2 = new Boolean(num6)
-console.log(num1, num1_2, typeof num1_2) // 1 [Boolean: true] object
-console.log(num2, num2_2, typeof num2_2) // undefined [Boolean: false] object
-console.log(num3, num3_2, typeof num3_2) // 2n [Boolean: true] object
-console.log(num4, num4_2, typeof num4_2) // 3.14 [Boolean: true] object
-console.log(num5, num5_2, typeof num5_2) // [Number: 0] [Boolean: true] object
-console.log(num6, num6_2, typeof num6_2) // [Number: 3] [Boolean: true] object
+// console.log(num1, num1_2, typeof num1_2) // 1 [Boolean: true] object
+// console.log(num2, num2_2, typeof num2_2) // undefined [Boolean: false] object
+// console.log(num3, num3_2, typeof num3_2) // 2n [Boolean: true] object
+// console.log(num4, num4_2, typeof num4_2) // 3.14 [Boolean: true] object
+// console.log(num5, num5_2, typeof num5_2) // [Number: 0] [Boolean: true] object
+// console.log(num6, num6_2, typeof num6_2) // [Number: 3] [Boolean: true] object
+
+
+// object using Object() or new Object()
+let num1_3 = Object(num1)
+let num2_3 = Object(num2)
+let num3_3 = Object(num3)
+let num4_3 = Object(num4)
+let num5_3 = Object(num5)
+let num6_3 = Object(num6)
+// console.log(num1, num1_3, typeof num1_3) // 1 [Number: 1] object
+// console.log(num2, num2_3, typeof num2_3) // undefined {} object
+// console.log(num3, num3_3, typeof num3_3) // 2n [BigInt: 2n] object
+// console.log(num4, num4_3, typeof num4_3) // 3.14 [Number: 3.14] object
+// console.log(num5, num5_3, typeof num5_3) // [Number: 0] [Number: 0] object
+// console.log(num6, num6_3, typeof num6_3) // [Number: 3] [Number: 3] object
