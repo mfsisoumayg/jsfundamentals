@@ -2,7 +2,7 @@
     number -> string; object; array
 */
 
-let num1 = 1 // is equal to Number()
+let num1 = 1 // is equal to Number() = 0
 let num2
 let num3 = 2n
 let num4 = 3.14
