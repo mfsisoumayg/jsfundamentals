@@ -103,3 +103,11 @@ obj3.ver = 18
 // console.log(obj1, typeof obj1) // {} object
 // console.log(obj2, typeof obj2) // {} object
 // console.log(obj3, typeof obj3) // {} object
+
+
+console.log('---Check Map---');
+let map1 = new Map()
+map1.set("ver", 1)
+map1.set("dateType", typeof map1)
+// let map2 = Map() // TypeError: Constructor Map required 'new'
+// console.log(map1)
