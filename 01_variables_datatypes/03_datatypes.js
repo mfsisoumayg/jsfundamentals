@@ -9,9 +9,13 @@ console.log('---Check string---')
 let str1 = "Hello 2"
 let str2 = String("Hello 2")
 let str3 = new String("Hello 3")
+let str4 = ""
+let str5
 console.log(typeof str1) // string
 console.log(typeof str2) // string
 console.log(typeof str3) // object
+console.log(typeof str4) // string
+console.log(typeof str5) // undefined
 
 console.log('---Check number---')
 let nm1 = 1
