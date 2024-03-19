@@ -59,13 +59,49 @@ str6_1 = new Number(st6)
 let str1to4_2 = Boolean(st1) // constains the value
 let str5_2 = Boolean(st5)
 let str6_2 = Boolean(st6)
-console.log(str1to4_2, typeof str1to4_2) // true boolean
-console.log(str5_2, typeof str5_2) // false boolean
-console.log(str6_2, typeof str6_2) // false boolean
+// console.log(str1to4_2, typeof str1to4_2) // true boolean
+// console.log(str5_2, typeof str5_2) // false boolean
+// console.log(str6_2, typeof str6_2) // false boolean
 // boolean using new Boolean()
 str1to4_2 = new Boolean(st1) // constains the value
 str5_2 = new Boolean(st5)
 str6_2 = new Boolean(st6)
-console.log(str1to4_2, typeof str1to4_2) // [Boolean: true] object
-console.log(str5_2, typeof str5_2) // [Boolean: false] object
-console.log(str6_2, typeof str6_2) // [Boolean: false] object
+// console.log(str1to4_2, typeof str1to4_2) // [Boolean: true] object
+// console.log(str5_2, typeof str5_2) // [Boolean: false] object
+// console.log(str6_2, typeof str6_2) // [Boolean: false] object
+
+
+// object using Object() or new Object()
+let str1to4_3 = Object(st1) // constains the value
+let str5_3 = Object(st5)
+let str6_3 = Object(st6)
+// console.log(str1to4_3, typeof str1to4_3) // [String: 'abc'] object
+// console.log(str5_3, typeof str5_3) // [String: ''] object
+// console.log(str6_3, typeof str6_3) // {} object
+
+
+// arrays using split()
+let str1to4_4 = st1.split()
+let str5_4 = st5.split()
+// let str6_4 = st6.split() // TypeError: Cannot read properties of undefined
+// console.log(str1to4_4, typeof str1to4_4) // [ 'abc' ] object
+// console.log(str5_4, typeof str5_4) // [ '' ] object
+// arrays using Array.from()
+str1to4_4 = Array.from(st1)
+str5_4 = Array.from(st5)
+// let str6_4 = Array.from(st6) // TypeError: undefined is not iterable
+// console.log(str1to4_4, typeof str1to4_4) // [ 'a', 'b', 'c' ] object
+// console.log(str5_4, typeof str5_4) // [] object
+// array using Array() or new Array()
+str1to4_4 = Array(st1)
+str5_4 = Array(st5)
+let str6_4 = Array(st6)
+// console.log(str1to4_4, typeof str1to4_4) // [ 'abc' ] object
+// console.log(str5_4, typeof str5_4) // [ '' ] object
+// console.log(str6_4, typeof str6_4) // [ undefined ] object
+//array using [...] or Array(...) operator
+str1to4_4 = [...st1]
+str5_4 = [...st5]
+// str6_4 = [...st6] // TypeError: is not iterable
+// console.log(str1to4_4, typeof str1to4_4) // [ 'a', 'b', 'c' ] object
+// console.log(str5_4, typeof str5_4) // [] object
