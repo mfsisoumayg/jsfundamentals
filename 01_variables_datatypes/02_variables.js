@@ -1,6 +1,6 @@
-let a = "a";
-var b = "b";
-const c = "c";
+let a = "a"; // declared only once w.r.t variable name
+var b = "b"; // declared infinite w.r.t variable name
+const c = "c"; // declared only once w.r.t variable name
 console.log(a)
 console.log(b)
 console.log(c)
