@@ -1,6 +1,5 @@
 let arr1 = []
 
-
 // pop, push, shift, unshift
 arr1.push(3)
 console.log(arr1)
@@ -24,3 +23,11 @@ console.log(arr1)
 // sort
 arr1.sort()
 console.log(arr1)
+
+let arr2 = ['Alpha', 'Zeta', 'alpha', 'zeta']
+// sorting with ASCII code or case-sensitive order
+arr2.sort()
+console.log(arr2)
+// sorting without case-sensitive order
+arr2.sort((str1, str2) => str1.localeCompare(str2, undefined, {sensitivity: 'accent'}))
+console.log(arr2)
