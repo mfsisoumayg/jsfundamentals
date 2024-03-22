@@ -28,3 +28,5 @@ map2.forEach((value, key) =>{
 })
 
 console.log(map2.size)
+
+console.log(map2.get('key'))
